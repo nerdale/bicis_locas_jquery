@@ -68,7 +68,7 @@ function validateForm(){
 	password();
 
 	function lista(){
-		var seleccion = $('.form-group:eq(1)').val();
+		var seleccion = $('select').val();
 		if(seleccion == 0){
 			$('.form-group:eq(1)').append('<span>¡Error! Debe seleccionar una opción</span>'); //llamo a la clase del contenedor y su posición, le paso el span con el texto
 			return false;
